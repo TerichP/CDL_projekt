@@ -9,21 +9,21 @@ import Link from '@mui/joy/Link';
 import Typography from '@mui/joy/Typography';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-export default function ProductCard() {
+export default function ProductCard(props) {
   return (
     <Card sx={{ width: 320, maxWidth: '100%', boxShadow: 'lg' }}>
       <CardOverflow>
         <AspectRatio sx={{ minWidth: 200 }}>
           <img
-            src="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286"
-            srcSet="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286&dpr=2 2x"
+            src={props.path} /* path na img */
+            /*srcSet="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286&dpr=2 2x"*/
             loading="lazy"
-            alt=""
+            alt={props.alt}
           />
         </AspectRatio>
       </CardOverflow>
       <CardContent>
-        <Typography level="body-xs">Bluetooth Headset</Typography>
+        <Typography level="body-xs">{props.type}</Typography> {/*typ produktu*/}
         <Link
           href="#product-card"
           color="neutral"
@@ -32,7 +32,7 @@ export default function ProductCard() {
           endDecorator={<ArrowOutwardIcon />}
           sx={{ fontWeight: 'md' }}
         >
-          Super Rockez A400
+          {props.name} {/*přesené jméno produktu*/}
         </Link>
 
         <Typography
@@ -44,15 +44,15 @@ export default function ProductCard() {
             </Chip>
           }
         >
-          2,900 THB
+          {props.price} CZK {/*cena*/}
         </Typography>
         <Typography level="body-sm">
-          (Only <b>7</b> left in stock!)
+          (Zbývá už jen {props.left} kusů!) {/* FOMO bait */}
         </Typography>
       </CardContent>
       <CardOverflow>
         <Button variant="solid" color="danger" size="lg">
-          Add to cart
+          Přidat do košíku
         </Button>
       </CardOverflow>
     </Card>
