@@ -15,8 +15,8 @@ export default function ProductCard(props) {
       <CardOverflow>
         <AspectRatio sx={{ minWidth: 200 }}>
           <img
-            src={props.path} /* path na img */
-            /*srcSet="https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&w=286&dpr=2 2x"*/
+            src="./components/ph.JPG"   /*{props.img} /* path na img */
+            srcSet="./components/ph.JPG"
             loading="lazy"
             alt={props.alt}
           />
