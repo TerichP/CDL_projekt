@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <MyNav 
-      eshop="Nazev eshopu">
+        eshop="Nazev eshopu">
       </MyNav>
 
       <MyCard 
@@ -16,7 +16,7 @@ function App() {
         left="3" 
         alt="headphones" 
         path=" ZDE PATH NA OBRAZEK "
-        />
+      />
     </div>
   );
 }
