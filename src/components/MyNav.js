@@ -13,6 +13,10 @@ export default function MyNav(props) {
                     <Button color="inherit">Prihlaseni</Button>
                     <Button color="inherit">Oblibene</Button>
                     <Button color="inherit">Kosik</Button>
+                    {/* pridat hamburger menu,
+                        na desktopu neviditelne,
+                        pri zobrazeni hamburgeru schovat kosik, oblib. a prihl.
+                    */}
                 </Stack>
 
             </Toolbar>
