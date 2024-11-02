@@ -10,9 +10,9 @@ export default function MyNav(props) {
                 </Typography>
 
                 <Stack direction="row" spacing={4}>
-                    <Button color="inherit">LoginPH</Button>
-                    <Button color="inherit">Favourites</Button>
-                    <Button color="inherit">Cart</Button>
+                    <Button color="inherit">Prihlaseni</Button>
+                    <Button color="inherit">Oblibene</Button>
+                    <Button color="inherit">Kosik</Button>
                 </Stack>
 
             </Toolbar>

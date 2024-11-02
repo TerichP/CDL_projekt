@@ -52,15 +52,7 @@ function App() {
         loader={<p>Loading...</p>}
       >
         {dataSource.map((item, index) => (
-          <MyCard
-            key={index}
-            name={item.name}
-            type={item.type}
-            price={item.price}
-            left={item.left}
-            alt={item.alt}
-            path={item.path}
-          />
+          <MyCard key={index} />
         ))}
       </InfiniteScroll> */}
     </div>
