@@ -8,6 +8,7 @@ import Chip from '@mui/joy/Chip';
 import Link from '@mui/joy/Link';
 import Typography from '@mui/joy/Typography';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import "./ph.JPG";
 
 export default function ProductCard(props) {
   return (
@@ -15,7 +16,7 @@ export default function ProductCard(props) {
       <CardOverflow>
         <AspectRatio sx={{ minWidth: 200 }}>
           <img
-            src="./components/ph.JPG"   /*{props.img} /* path na img */
+            src={props.img} 
             srcSet="./components/ph.JPG"
             loading="lazy"
             alt={props.alt}
@@ -32,19 +33,14 @@ export default function ProductCard(props) {
           endDecorator={<ArrowOutwardIcon />}
           sx={{ fontWeight: 'md' }}
         >
-          {props.name} {/*přesené jméno produktu*/}
+          {props.name} {/*přesné jméno produktu */}
         </Link>
 
         <Typography
           level="title-lg"
           sx={{ mt: 1, fontWeight: 'xl' }}
-          endDecorator={
-            <Chip component="span" size="sm" variant="soft" color="success">
-              Lowest price
-            </Chip>
-          }
         >
-          {props.price} CZK {/*cena*/}
+          {props.price} CZK  {/*cena*/}
         </Typography>
         <Typography level="body-sm">
           (Zbývá už jen {props.left} kusů!) {/* FOMO bait */}
