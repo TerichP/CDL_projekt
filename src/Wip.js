@@ -6,25 +6,6 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import placeholderImage from "./components/ph.JPG"; // Importing the placeholder image
 
 function App() {
- /* const [dataSource, setDataSource] = useState([
-    { name: "Razer 3k ANC", type: "Sluchatka", price: "3000", left: "3", alt: "headphones", path: placeholderImage }
-  ]);
-  const [hasMore, setHasMore] = useState(true); // Track if there are more items to load
-
-  const fetchMoreData = () => {
-    setTimeout(() => {
-      if (dataSource.length >= 20) {
-        setHasMore(false);
-        return;
-      }
-
-      const newItems = [
-        { name: "Item " + (dataSource.length + 1), type: "Example", price: "2000", left: "5", alt: "item", path: placeholderImage }
-      ];
-      setDataSource(prevDataSource => prevDataSource.concat(newItems));
-    }, 500);
-  };
-  */
 
   const [dataSource, setDataSource] = useState(Array.from({length:20}))
   const [hasMore, setHasMore] = useState(true)

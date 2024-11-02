@@ -22,7 +22,7 @@ export default function MultiActionAreaCard() {
             Hrnek
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Strucny Popis Produktu
+            400 CZK
           </Typography>
         </CardContent>
       </CardActionArea>
