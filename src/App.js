@@ -1,11 +1,22 @@
 import MyCard from './components/MyCard';
 import MyNav from './components/MyNav';
 import { Container, Grid2 } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Write from './components/Write';
 
 
 function App() {
   return (
     <div className="App">
+      
+      <Router>
+        <Routes>
+          <Route path ="/"/>
+          <Route path ="/write" element={<Write/>}/>
+        </Routes>
+      </Router>
+      
+      
       <header>
         <MyNav
           eshop="Keramika">
