@@ -1,4 +1,3 @@
-import './App.css';
 import MyCard from './components/MyCard';
 import MyNav from './components/MyNav';
 import { Container, Grid2 } from '@mui/material';
