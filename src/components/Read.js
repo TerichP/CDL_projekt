@@ -23,7 +23,7 @@ function Read() {
             <ul>
                 {productArray.map((item, index) => (
                     <li key={index}>
-                        {item.productAlt}:{item.productPrice}
+                        {item.productAlt} {item.productPrice} {item.productName} {item.productImg}
                     </li>
                 ))}
             </ul>

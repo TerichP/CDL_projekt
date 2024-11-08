@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Write from './components/Write';
 import ProductLoad from './components/ProductLoad';
 import Read from './components/Read';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
@@ -12,21 +13,12 @@ function App() {
       
       <Router>
         <Routes>
-          <Route path ="/"/>
+          <Route path ="/" element={<MainPage/>}/>
           <Route path ="/write" element={<Write/>}/>
           <Route path ="/read" element={<Read/>}/>
         </Routes>
       </Router>
-      
-      <header>
-        <MyNav
-          eshop="Keramika">
-        </MyNav>
-      </header>
-      
-      <body style={{marginTop: 80}}>
-        <ProductLoad/>
-      </body>
+
     </div>
   );
 }
