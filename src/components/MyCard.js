@@ -7,22 +7,22 @@ import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 
-export default function MultiActionAreaCard() {
+export default function MultiActionAreaCard(props) {
   return (
     <Card>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image="/src/components/ph.jpg"
-          alt="hrnek"
+          image="/src/components/ph.jpg" //WIP dodelat path na DB img
+          alt= {props.alt}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Hrnek
+            {props.name}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            400 CZK
+            {props.price} CZK
           </Typography>
         </CardContent>
       </CardActionArea>
