@@ -16,13 +16,13 @@ function App() {
         </Routes>
       </Router>
       
-      
+      {/*
       <header>
         <MyNav
           eshop="Keramika">
         </MyNav>
       </header>
-      
+      */}
       <body style={{marginTop: 80}}>
         <Container>
           <Grid2 container spacing={2}>
