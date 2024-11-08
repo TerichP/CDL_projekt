@@ -14,7 +14,7 @@ export default function MultiActionAreaCard(props) {
         <CardMedia
           component="img"
           height="140"
-          image="/src/components/ph.jpg" //WIP dodelat path na DB img
+          image= {props.img} //WIP dodelat path na DB img
           alt= {props.alt}
         />
         <CardContent>
