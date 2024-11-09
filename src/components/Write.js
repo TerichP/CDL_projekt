@@ -51,12 +51,12 @@ function Write() {
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>    
-                            <TextField id="outlined-basic" label="Link na obrázek" variant="outlined" value={inputValue3}
+                            <TextField id="outlined-basic" label="Alt Text" variant="outlined" value={inputValue3}
                                 onChange={(e) => setInputValue3(e.target.value)}/>
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>    
-                            <TextField id="outlined-basic" label="Alt text" variant="outlined" value={inputValue4}
+                            <TextField id="outlined-basic" label="Link Na Obrázek" variant="outlined" value={inputValue4}
                                 onChange={(e) => setInputValue4(e.target.value)}/>
                         </Grid2>
 

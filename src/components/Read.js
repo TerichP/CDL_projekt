@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import app from "../firebaseConfig";
 import { getDatabase, ref, get } from "firebase/database";
+import MyNav from "./MyNav";
 
 function Read() {
 
@@ -13,22 +14,32 @@ function Read() {
         if(snapshot.exists()) {
             setProductArray(Object.values(snapshot.val()));
         } else {
-            alert("error");
+            alert("Žádné data k načtení");
         }
     }
 
     return (
         <div>
-            <button onClick={fetchData}>DISPLAY DATA</button>
-            <ul>
-                {productArray.map((item, index) => (
-                    <li key={index}>
-                        {item.productAlt} {item.productPrice} {item.productName} {item.productImg}
-                    </li>
-                ))}
-            </ul>
+            <header>
+                <MyNav
+                    eshop="Keramika">
+                </MyNav>
+            </header>
+
+            <body style={{marginTop: 80}}>
+                <button onClick={fetchData}>DISPLAY DATA</button>
+                        <ul>
+                            {productArray.map((item, index) => (
+                                <li key={index}>
+                                    Alt text:{item.productAlt} Cena:{item.productPrice} Jméno:{item.productName} Path na img:{item.productImg}
+                                </li>
+                            ))}
+                        </ul>
+
+            </body>
         </div>
     )
 }
 
 export default Read
+
