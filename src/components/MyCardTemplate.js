@@ -28,7 +28,7 @@ export default function MultiActionAreaCard(props) {
       </CardActionArea>
       <CardActions>
         <Button size="large" color="primary">
-          Add to cart
+          Přidat do košíku
         </Button>
        {/* pridat icon button na oblibene */}
       </CardActions>
