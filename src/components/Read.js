@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import app from "../firebaseConfig";
 import { getDatabase, ref, get } from "firebase/database";
 import MyNav from "./MyNav";
+import Button from '@mui/material/Button';
 
 function Read() {
 
@@ -27,14 +28,11 @@ function Read() {
             </header>
 
             <body style={{marginTop: 80}}>
-                <button onClick={fetchData}>DISPLAY DATA</button>
+                <Button variant="contained" onClick={fetchData}>Načíst data</Button>
                         <ul>
                             {productArray.map((item, index) => (
                                 <li key={index} style={{marginBottom: 10}}>
-                                    Alt text: {item.productAlt} 
-                                    Cena: {item.productPrice} 
-                                    Jméno: {item.productName} 
-                                    Path na img: {item.productImg}
+                                    <b>Alt text:</b> {item.productAlt} <b>Cena:</b> {item.productPrice} <b>Jméno:</b> {item.productName} <b>Path na img:</b> {item.productImg}
                                 </li>
                             ))}
                         </ul>
@@ -45,4 +43,3 @@ function Read() {
 }
 
 export default Read
-
