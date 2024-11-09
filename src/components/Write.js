@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import app from "../firebaseConfig";
 import { getDatabase, ref, set, push } from "firebase/database";
+import MyNav from "./MyNav";
 
 function Write() {
     let [inputValue1, setInputValue1] = useState("");
@@ -25,21 +26,30 @@ function Write() {
 
     return (
         <div>
-            <input type="text" value={inputValue1}
-            onChange={(e) => setInputValue1(e.target.value)}/>
+            <header>
+                <MyNav
+                     eshop="Keramika">
+                </MyNav>
+            </header>
+        
+            <body style={{marginTop: 80}}>
+                <input type="text" value={inputValue1}
+                onChange={(e) => setInputValue1(e.target.value)}/>
 
-            <input type="text" value={inputValue2}
-            onChange={(e) => setInputValue2(e.target.value)}/>
-            
-            <input type="text" value={inputValue3}
-            onChange={(e) => setInputValue3(e.target.value)}/>
+                <input type="text" value={inputValue2}
+                onChange={(e) => setInputValue2(e.target.value)}/>
+                
+                <input type="text" value={inputValue3}
+                onChange={(e) => setInputValue3(e.target.value)}/>
 
-            <input type="file" value={inputValue4}
-            onChange={(e) => setInputValue4(e.target.value)}/> <br/>
+                <input type="file" value={inputValue4}
+                onChange={(e) => setInputValue4(e.target.value)}/> <br/>
 
-            <button onClick={saveData}>SAVE DATA</button>
+                <button onClick={saveData}>SAVE DATA</button>
+            </body>
         </div>
     )
 }
 
-export default Write
+export default Write 
+

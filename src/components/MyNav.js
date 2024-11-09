@@ -10,9 +10,9 @@ export default function MyNav(props) {
                 </Typography>
 
                 <Stack direction="row" spacing={4}>
-                    <Button color="inherit">Prihlaseni</Button>
-                    <Button color="inherit">Oblibene</Button>
-                    <Button color="inherit">Kosik</Button>
+                    <Button color="inherit">Hlavní Stránka</Button>
+                    <Button color="inherit">Přidat Produkt</Button>
+                    <Button color="inherit">Odstranit Produkt dodelat</Button>
                     {/* pridat hamburger menu,
                         na desktopu neviditelne,
                         pri zobrazeni hamburgeru schovat kosik, oblib. a prihl.
