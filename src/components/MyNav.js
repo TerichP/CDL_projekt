@@ -1,7 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import { AppBar, Toolbar, Typography, Stack, Button } from "@mui/material";
 
 export default function MyNav(props) {
+    
+    const navigate = useNavigate();
+    
     return(
         <AppBar>
             <Toolbar>
@@ -10,9 +14,9 @@ export default function MyNav(props) {
                 </Typography>
 
                 <Stack direction="row" spacing={4}>
-                    <Button color="inherit">Hlavní Stránka</Button>
-                    <Button color="inherit">Přidat Produkt</Button>
-                    <Button color="inherit">Odstranit Produkt dodelat</Button>
+                    <Button color="inherit" onClick={ () => navigate("/")}>Hlavní Stránka</Button>
+                    <Button color="inherit" onClick={ () => navigate("/write")}>Přidat Produkt</Button>
+                    <Button color="inherit" onClick={ () => navigate("/read")}>Odstranit Produkt dodelat</Button>
                     {/* pridat hamburger menu,
                         na desktopu neviditelne,
                         pri zobrazeni hamburgeru schovat kosik, oblib. a prihl.
