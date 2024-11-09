@@ -19,7 +19,7 @@ function ProductLoad() {
         if(snapshot.exists()) {
             setProductArray(Object.values(snapshot.val()));
         } else {
-            alert("error");
+            alert("Momentálně nejsou v nabídce žádné produkty.");
         }
     }
 
