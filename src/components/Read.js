@@ -30,8 +30,11 @@ function Read() {
                 <button onClick={fetchData}>DISPLAY DATA</button>
                         <ul>
                             {productArray.map((item, index) => (
-                                <li key={index}>
-                                    Alt text:{item.productAlt} Cena:{item.productPrice} Jméno:{item.productName} Path na img:{item.productImg}
+                                <li key={index} style={{marginBottom: 10}}>
+                                    Alt text: {item.productAlt} 
+                                    Cena: {item.productPrice} 
+                                    Jméno: {item.productName} 
+                                    Path na img: {item.productImg}
                                 </li>
                             ))}
                         </ul>
