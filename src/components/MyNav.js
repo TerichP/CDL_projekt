@@ -17,7 +17,7 @@ export default function MyNav(props) {
                 <Stack direction="row" spacing={4}>
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/")}>Hlavní Stránka</Button>
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/write")}>Přidat Produkt</Button>
-                    <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/read")}>Odstranit Produkt dodelat</Button>
+                    <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/read")}>Data</Button>
                     
                     <RwbMenu></RwbMenu>
                  
