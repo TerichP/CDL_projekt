@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"
 import { AppBar, Toolbar, Typography, Stack, Button } from "@mui/material";
+import RwbMenu from './RwbMenu'
 
 export default function MyNav(props) {
     
@@ -17,10 +18,9 @@ export default function MyNav(props) {
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/")}>Hlavní Stránka</Button>
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/write")}>Přidat Produkt</Button>
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/read")}>Odstranit Produkt dodelat</Button>
-                    {/* pridat hamburger menu,
-                        na desktopu neviditelne,
-                        pri zobrazeni hamburgeru schovat kosik, oblib. a prihl.
-                    */}
+                    
+                    <RwbMenu></RwbMenu>
+                 
                 </Stack>
 
             </Toolbar>
