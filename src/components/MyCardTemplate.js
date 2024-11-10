@@ -14,7 +14,7 @@ export default function MultiActionAreaCard(props) {
         <CardMedia
           component="img"
           height="140"
-          image= {props.img} //WIP dodelat path na DB img
+          image= {props.img} 
           alt= {props.alt}
         />
         <CardContent>
@@ -30,7 +30,6 @@ export default function MultiActionAreaCard(props) {
         <Button size="large" color="primary">
           Přidat do košíku
         </Button>
-       {/* pridat icon button na oblibene */}
       </CardActions>
     </Card>
   );

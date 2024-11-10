@@ -19,10 +19,8 @@ export default function MyNav(props) {
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/write")}>Přidat Produkt</Button>
                     <Button sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }} color="inherit" onClick={ () => navigate("/read")}>Data</Button>
                     
-                    <RwbMenu></RwbMenu>
-                 
+                    <RwbMenu/>
                 </Stack>
-
             </Toolbar>
         </AppBar>
     )

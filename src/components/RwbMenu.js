@@ -47,9 +47,11 @@ export default function AnchorTemporaryDrawer() {
           
           return (
             <ListItem key={text} disablePadding>
+
               <ListItemButton onClick={() => handleNavigation(paths[index])}>
                 <ListItemText primary={text} />
               </ListItemButton>
+
             </ListItem>
           );
         })}
@@ -62,16 +64,19 @@ export default function AnchorTemporaryDrawer() {
         {!isMediumUp && (
         [''].map((anchor) => (
             <React.Fragment key={anchor}>
-            <IconButton aria-label="reorder" onClick={toggleDrawer(anchor, true)}>
-                <ReorderOutlinedIcon />
-            </IconButton>
-            <Drawer
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-            >
-                {list(anchor)}
-            </Drawer>
+
+                <IconButton aria-label="reorder" onClick={toggleDrawer(anchor, true)}>
+                    <ReorderOutlinedIcon />
+                </IconButton>
+
+                <Drawer
+                    anchor={anchor}
+                    open={state[anchor]}
+                    onClose={toggleDrawer(anchor, false)}
+                >
+                    {list(anchor)}
+                </Drawer>
+
             </React.Fragment>
         ))
         )}

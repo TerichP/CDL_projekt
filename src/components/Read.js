@@ -29,14 +29,14 @@ function Read() {
 
             <body style={{marginTop: 80}}>
                 <Button variant="contained" onClick={fetchData}>Načíst data</Button>
-                        <ul>
-                            {productArray.map((item, index) => (
-                                <li key={index} style={{marginBottom: 10}}>
-                                    <b>Alt text:</b> {item.productAlt} <b>Cena:</b> {item.productPrice} <b>Jméno:</b> {item.productName} <b>Path na img:</b> {item.productImg}
-                                </li>
-                            ))}
-                        </ul>
 
+                <ul>
+                    {productArray.map((item, index) => (
+                        <li key={index} style={{marginBottom: 10}}>
+                            <b>Alt text:</b> {item.productAlt} <b>Cena:</b> {item.productPrice} <b>Jméno:</b> {item.productName} <b>Path na img:</b> {item.productImg}
+                        </li>
+                    ))}
+                </ul>
             </body>
         </div>
     )

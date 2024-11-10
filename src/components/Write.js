@@ -36,35 +36,35 @@ function Write() {
             </header>
         
             <body style={{marginTop: 80}}>
-                
                 <Container>
                     <Grid2 container spacing={2}>
+
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>
                             <TextField id="outlined-basic" label="Jméno Produktu" variant="outlined" value={inputValue1}
-                                onChange={(e) => setInputValue1(e.target.value)}/>
+                            onChange={(e) => setInputValue1(e.target.value)}/>
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>
                             <TextField id="outlined-basic" label="Cena" variant="outlined" value={inputValue2}
-                                onChange={(e) => setInputValue2(e.target.value)}/>
+                            onChange={(e) => setInputValue2(e.target.value)}/>
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>    
                             <TextField id="outlined-basic" label="Alt Text" variant="outlined" value={inputValue3}
-                                onChange={(e) => setInputValue3(e.target.value)}/>
+                            onChange={(e) => setInputValue3(e.target.value)}/>
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 6, md: 3 }}>    
                             <TextField id="outlined-basic" label="Link Na Obrázek" variant="outlined" value={inputValue4}
-                                onChange={(e) => setInputValue4(e.target.value)}/>
+                            onChange={(e) => setInputValue4(e.target.value)}/>
                         </Grid2>
 
                         <Grid2 size={{ xs: 12, sm: 12, md: 12 }}>
                             <Button variant="contained" onClick={saveData}>Přidat Produkt</Button>
                         </Grid2>
+
                     </Grid2>
                 </Container>
-
             </body>
         </div>
     )
