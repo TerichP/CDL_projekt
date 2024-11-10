@@ -15,11 +15,11 @@ export default function MultiActionAreaCard(props) {
           component="img"
           height="140"
           image= {props.img} 
-          alt= {props.alt}
+          alt= {props.alt} 
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.name}
+            {props.name} {/* Jmeno produktu */}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
             {props.price} CZK
